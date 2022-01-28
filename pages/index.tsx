@@ -1,3 +1,4 @@
+import { Button, Container, Text } from '@nextui-org/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -10,7 +11,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>init page</main>
+      <main>
+        <Container>
+          <Text h1>Init page</Text>
+          <Text>ここに本文</Text>
+          <Button>Button</Button>
+        </Container>
+      </main>
     </div>
   )
 }
