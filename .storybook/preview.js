@@ -1,7 +1,7 @@
-import { NextUIProvider } from "@nextui-org/react";
-import { RouterContext } from "next/dist/shared/lib/router-context"; // next 12
+import { NextUIProvider } from '@nextui-org/react'
+import { RouterContext } from 'next/dist/shared/lib/router-context' // next 12
 
-import {lightTheme, darkTheme} from '../src/utils/uiTheme';
+import { lightTheme, darkTheme } from '../src/utils/uiTheme'
 
 export const globalTypes = {
   theme: {
@@ -11,23 +11,25 @@ export const globalTypes = {
     toolbar: {
       icon: 'lightning',
       items: ['light', 'dark'],
-      showName: true
-    }
-  }
+      showName: true,
+    },
+  },
 }
 
 export const decorators = [
   (Story, context) => {
     return (
-      <NextUIProvider theme={context.globals.theme === 'light' ? lightTheme : darkTheme}>
+      <NextUIProvider
+        theme={context.globals.theme === 'light' ? lightTheme : darkTheme}
+      >
         <Story />
       </NextUIProvider>
     )
-  }
+  },
 ]
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -36,5 +38,5 @@ export const parameters = {
   },
   nextRouter: {
     Provider: RouterContext.Provider,
-  }
+  },
 }
