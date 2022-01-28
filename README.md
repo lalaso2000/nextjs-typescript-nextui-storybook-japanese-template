@@ -1,4 +1,4 @@
-# Next.js + TypeScript + Next UI + Storybook + Japanese Templete
+# Next.js + TypeScript + Next UI + Storybook + Japanese Template
 
 ## 特徴
 
