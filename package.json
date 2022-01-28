@@ -1,5 +1,5 @@
 {
-  "name": "kana-next",
+  "name": "nextjs-typescript-nextui-storybook-japanese-template",
   "private": true,
   "scripts": {
     "dev": "next dev",
